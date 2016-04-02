@@ -31,8 +31,6 @@ if (Process.arguments.count <= 2) {
     exit(0)
 }
 
-let inputs = Process.arguments[1...Process.arguments.count - 1]
-
 for i in 1...Process.arguments.count - 2 {
     let num:Double? = Double(Process.arguments[i])
     nums.append(num!)
