@@ -45,9 +45,9 @@ switch keyword {
             sign = -1.0;
         }
         
-        var sum = 0.0
-        for n in nums {
-            sum = sum + n * sign;
+        var sum = nums[0]
+        for i in 1...nums.count - 1 {
+            sum = sum + nums[i] * sign;
         }
 
         print(sum)
